@@ -5,4 +5,12 @@
 # BMI 함수는 지난 시간에 작성한 get_bmi 함수를 이용하여 작성하시오.
 
 def get_BMI(weight, height):
-    
+    height_m = height / 100
+    bmi = weight / (height_m * 2)
+    return bmi
+
+def get_BMI_list(weight, height):
+    bmi = get_BMI(weight, height)
+    return bmi
+
+print(get_BMI_list(70, 170))
